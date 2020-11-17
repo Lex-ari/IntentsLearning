@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">IntentsLearning</string>
+    <string name="login_appTitle">FunnyAppNameHere</string>
+    <string name="usernameHint">Username</string>
+    <string name="passwordHint">Password</string>
+    <string name="trouble_logging_in">Trouble Logging In?</string>
+    <string name="signUp">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="credit">App by Alex Mariano</string>
+    <string name="newUserSignup">New User Signup</string>
+    <string name="register">Register Now</string>
+    <string name="cancelRegistration">Cancel Registration</string>
 </resources>
