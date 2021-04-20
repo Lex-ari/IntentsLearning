@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.backendless.Backendless
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -15,6 +16,18 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        // initialize backendless
+        Backendless.initApp(this, Constants.APP_ID, Constants.API_KEY)
+
+        // make the backendless call to login when they click the login button
+        button_login_login.setOnClickListener{
+            // extra the username and password from the edittexts
+            val username = editText_login_username.text.toString()
+            val password = editText_login_password.text.toString()
+
+
+        }
 
         button_login_signUp.setOnClickListener {
             val username = editText_login_username.text.toString()
