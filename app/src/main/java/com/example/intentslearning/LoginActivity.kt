@@ -38,6 +38,11 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this@LoginActivity, "${response?.userId} has logged in.", Toast.LENGTH_SHORT).show()
                     //TODO Bring the user to a new activity that's the "home" activity
                     // GradeListActivity
+
+                    val gradeListIntent = Intent(this@LoginActivity, GradeListActivity::class.java)
+                    startActivity(gradeListIntent)
+                    // to close the login screen so it's not there when they click back
+                    finish()
                 }
                 override fun handleFault(fault: BackendlessFault?) {
                     Toast.makeText(this@LoginActivity, "Somethign went wrong. Check the logs.", Toast.LENGTH_SHORT).show()
