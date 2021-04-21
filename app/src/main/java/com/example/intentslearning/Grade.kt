@@ -8,7 +8,7 @@ data class Grade(var assignment : String = "Assignment",
                  var percentage : Double = 1.0,
                  var studentName : String = "Student",
                  var subject : String = "Default Subject",
-                 var objectId : String = "",
-                 var ownerId : String = ""){
+                 var objectId : String? = null,
+                 var ownerId : String? = null){
 
 }
